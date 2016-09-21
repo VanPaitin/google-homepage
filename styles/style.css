@@ -1,11 +1,7 @@
 
-#google-logo {
-  height: 120px;
-  width: 350px;
-}
-
 .form-group {
-  max-width: 650px;
+  max-width: 600px;
+  margin-top: 25px;
 }
 
 #microphone-logo {
@@ -17,6 +13,10 @@
 #search-field {
   height: 42px;
   border-radius: 0;
+  box-shadow: none;
+}
+#search-field:focus {
+  border-color: #4285f4;
 }
 
 .navbar-right {
@@ -63,6 +63,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 40px;
+  border-top: 1px solid #e4e4e4;
   background-color: #f2f2f2;
 }
 footer ul {
@@ -77,12 +78,50 @@ footer li a {
   font-family: arial, sans-serif;
   font-size: 13px;
 }
-footer li a:hover {
-  color: #666;
-}
 p {
   font-family: arial, sans-serif;
+  padding-top: 30px;
 }
-.submit-button p, .submit-button, div.form-group {
+p a {
+  color: #609;
+  font-size: 13px;
+}
+.submit-button {
   padding-top: 25px;
+}
+.buttons {
+  display: inline;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  font-family: arial, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #666;
+  font-size: 13px;
+}
+.buttons:hover {
+  color: #222;
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+}
+#lucky {
+  position: relative;
+  left: 5px;
+}
+#search {
+  position: relative;
+  right: 5px;
+}
+nav li a {
+  font-family: arial, sans-serif;
+}
+center {
+  position: relative;
+  top: 90px;
+
 }
